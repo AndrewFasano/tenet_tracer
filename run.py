@@ -45,8 +45,9 @@ def driver():
     panda.revert_sync("root")
     panda.copy_to_guest(copydir, absolute_paths=True)
     panda.run_serial_cmd(f"chmod +x {full_targ}")
+    panda.run_serial_cmd(f"cd {copydir}")
     panda.load_plugin("trace", {"target": target_name, 'log': "trace.log"})
-    print(panda.run_serial_cmd(f"{full_targ}"))
+    print(panda.run_serial_cmd(f"./{target} {' '.join(args)}"))
 
     panda.end_analysis()
 
