@@ -1,7 +1,7 @@
 TENET Tracer
 ----
 
-Simple container to run [PANDA](https://panda.re)s' TENET trace collection plugin on a target program and also log the load address of your target program.
+Simple container to run [PANDA](https://panda.re)s' [Tenet](https://github.com/gaasedelen/tenet) trace collection [plugin](https://github.com/panda-re/panda/tree/master/panda/plugins/trace) on a target program and also log the load address of your target program.
 
 
 ## Example usage.
