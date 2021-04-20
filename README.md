@@ -31,7 +31,15 @@ drwxr-xr-x 2 root root     4096 Apr 10 19:33 .
 drwxr-xr-x 4 root root     4096 Apr 10 19:33 ..
 -rw-r--r-- 1 root root        0 Apr 10 19:33 foo
 -rwxr-xr-x 1 root root   133792 Apr 10 19:33 ls
--rw-r--r-- 1 root root 12176870 Apr 10 19:33 ls.log
+
+Trace saved to testdir/ls.log
+```
+
+The results are then available in `testdir/ls.log`:
+```
+rip=0x7ffff7dd6ea0,rax=0x0,rdx=0x0,rbx=0x0,rsp=0x7fffffffeb88,rbp=0x0,rsi=0x0,rdi=0x7fffffffeb90,r8=0x0,r9=0x0,r10=0x0,r11=0x0,r12=0x0,r13=0x0,r14=0x0,r15=0x0
+rip=0x7ffff7dd6ea1,mw=7fffffffeb80:0000000000000000,rsp=0x7fffffffeb80
+...
 ```
 
 
